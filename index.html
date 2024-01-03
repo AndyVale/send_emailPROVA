@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+   <h1>Do you want to send an email?</h1>
+   <p>Click here</p>
+   <!-- LINK A MATERIAL ICONS PER LE ICONE DEI PULSANTI -->
+<link rel="stylesheet" href="send_email.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+<script src="functions.js"></script>
+<div id="cTextEditor">
+    <div class="cToolbar">
+      <div class="cSection">
+        <button class=" material-icons" onclick="document.execCommand('bold',false,null)">
+          format_bold
+        </button> 
+        <button class=" material-icons" onclick="document.execCommand('italic',false,null);">
+          format_italic
+        </button> 
+        <button class=" material-icons" onclick="document.execCommand('underline',false,null)">
+          format_underline
+        </button>
+      </div>
+      <div class="cSection">
+        <button class=" material-icons" onclick="document.execCommand('justifyLeft',false,null)">
+          format_align_left
+        </button> 
+        <button class=" material-icons" onclick="document.execCommand('justifyCenter',false,null);">
+          format_align_center
+        </button> 
+        <button class=" material-icons" onclick="document.execCommand('justifyRight',false,null)">
+          format_align_right
+        </button>
+      </div> 
+      
+      <div class="cSection">
+        <button class=" material-icons" onclick="document.execCommand('indent',false,null)">
+          format_indent_increase
+        </button> 
+        <button class=" material-icons" onclick="document.execCommand('outdent',false,null);">
+          format_indent_decrease
+        </button> 
+      </div>
+  
+      <div class="cSection">
+        <button class=" material-icons" onclick="document.execCommand('undo',false,null)">
+          undo
+        </button> 
+        <button class=" material-icons" onclick="document.execCommand('redo',false,null);">
+          redo
+        </button> 
+      </div>   
+      <div class="cSection">
+   
+        <select   id="fontFamily" style="width:120px;">
+          <option>Arial</option>
+          <option>Arial Black</option>
+          <option>Arial Narrow</option>
+          <option>Helvetica</option>
+          <option>Lucida Sans</option>
+          <option>Century Gothic</option>
+          <option>Segoe UI</option>
+          <option>Calibri</option>
+          <option>Times New Roman</option>
+          <option>Bodoni MT</option>
+          <option>Bookman</option>
+          <option>Georgia</option>
+          <option>Monospace</option>
+          <option>Verdana</option>
+          <option>Forte</option>
+          <option>Consolas</option>
+          <option>Courier</option>
+          <option>Comic Sans</option>
+          <option>Impact</option>
+          <option>Papyrus</option>
+        </select>
+         <select   id="fontSize"  style="width:60px;">
+           <option>4</option>
+           <option>6</option>
+           <option>8</option>
+           <option>9</option>
+           <option>11</option>
+           <option selected>12</option>
+           <option>14</option>
+           <option>16</option>
+           <option>18</option>
+           <option>20</option>
+           <option>22</option>
+           <option>24</option>
+           <option>27</option>
+           <option>30</option>
+           <option>35</option>
+           <option>40</option>
+        </select>
+      </div>
+      <div class="cSection">
+        <button class=" material-icons">
+          print
+        </button> 
+      </div>
+    </div>
+      <div id="cTextbox" contenteditable></div>
+    </div>
+  </div>
+  <div>
+    <form >
+      <button type="submit" onclick='LoadEmail()'>send</button>
+    </form>
+  </div>
+    
+</body>
+
+</html>
+
